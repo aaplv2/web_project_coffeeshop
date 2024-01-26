@@ -3,7 +3,7 @@
   min-width: 1100px;
   max-width: 1600px;
   font-family: "Inter", Arial, sans-serif;
-  font-family: "Noto Serif", "Times New Roman", serif;
+  font-family: "Noto Serif", Times New Roman, serif;
   font-size: 16px;
   line-height: 20px;
   background-color: rgb(255, 255, 255);
@@ -63,7 +63,7 @@
   margin: 183px 0 0;
 }
 
-.header__title__span-accent {
+.header__span-accent {
   font-family: "Noto Serif";
   font-style: italic;
   font-size: 60px;
