@@ -263,6 +263,11 @@
   opacity: 70%;
 }
 
+.form__button:checked {
+  background-color: #2f80ed;
+  color: #ffffff;
+}
+
 .form__checkbox {
   border-radius: 2px;
 }

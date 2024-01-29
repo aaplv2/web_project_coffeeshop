@@ -44,8 +44,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital@1&display=swap"
-      rel="stylesheet" -->
-    />
+      rel="stylesheet"
+    /> -->
   </head>
   <body>
     <div class="page">
@@ -135,32 +135,48 @@
         </section>
         <section class="reservation" id="reserva">
           <h2 class="reservation__title">Reservar una mesa</h2>
-          <div class="reservation__form form__admin">
+          <div class="reservation__form form">
             <form class="form__admin">
               <fieldset class="form__fieldset">
-                <label class="form__label" for="">Nombre *</label>
+                <label class="form__label" for="name">Nombre *</label>
                 <input
                   class="form__input"
                   type="text"
+                  id="name"
+                  name="name"
                   placeholder="Nombre Apellido"
                   required
                 />
-                <label class="form__label" for="">Número de comensales *</label>
+                <label class="form__label" for="diners-number"
+                  >Número de comensales *</label
+                >
                 <input
                   class="form__input"
                   type="number"
+                  id="diners-number"
+                  name="diners-number"
+                  min="1"
+                  max="8"
                   placeholder="1-8"
                   required
                 />
-                <label class="form__label" for="">Fecha y hora *</label>
-                <input class="form__input" type="datetime-local" required />
-                <label class="form__label" for=""
+                <label class="form__label" for="date">Fecha y hora *</label>
+                <input
+                  class="form__input"
+                  type="datetime-local"
+                  id="date"
+                  name="date"
+                  required
+                />
+                <label class="form__label" for="email"
                   >Tu correo electrónico *</label
                 >
                 <input
                   class="form__input"
                   type="email"
                   placeholder="email@email.com"
+                  id="email"
+                  name="email"
                   required
                 />
                 <button class="form__button" type="submit">
@@ -171,6 +187,9 @@
                   ><input
                     class="form__checkbox form__checkbox_input"
                     type="checkbox"
+                    id="user-agreement"
+                    name="user-agreement"
+                    value="user-agreement"
                   />
                   Acepto los términos de uso
                 </label>
