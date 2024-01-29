@@ -13,6 +13,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Noto+Serif:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
       href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
       rel="stylesheet"
     />
@@ -38,7 +44,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital@1&display=swap"
-      rel="stylesheet"
+      rel="stylesheet" -->
     />
   </head>
   <body>
@@ -127,7 +133,51 @@
             </li>
           </ul>
         </section>
-        <section class="reservation" id="reserva"></section>
+        <section class="reservation" id="reserva">
+          <h2 class="reservation__title">Reservar una mesa</h2>
+          <div class="reservation__form form__admin">
+            <form class="form__admin">
+              <fieldset class="form__fieldset">
+                <label class="form__label" for="">Nombre *</label>
+                <input
+                  class="form__input"
+                  type="text"
+                  placeholder="Nombre Apellido"
+                  required
+                />
+                <label class="form__label" for="">Número de comensales *</label>
+                <input
+                  class="form__input"
+                  type="number"
+                  placeholder="1-8"
+                  required
+                />
+                <label class="form__label" for="">Fecha y hora *</label>
+                <input class="form__input" type="datetime-local" required />
+                <label class="form__label" for=""
+                  >Tu correo electrónico *</label
+                >
+                <input
+                  class="form__input"
+                  type="email"
+                  placeholder="email@email.com"
+                  required
+                />
+                <button class="form__button" type="submit">
+                  Reservar una mesa
+                </button>
+
+                <label class="form__label form__label_checkbox"
+                  ><input
+                    class="form__checkbox form__checkbox_input"
+                    type="checkbox"
+                  />
+                  Acepto los términos de uso
+                </label>
+              </fieldset>
+            </form>
+          </div>
+        </section>
         <section class="menu" id="menu"></section>
         <section class="about" id="contacto"></section>
       </main>
