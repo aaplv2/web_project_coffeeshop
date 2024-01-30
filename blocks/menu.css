@@ -35,20 +35,20 @@
   width: 1180px;
 }
 
-.card {
-  width: 540px;
-}
-
-.card__item-top {
+.menu__cards-top {
   display: flex;
   justify-self: center;
   gap: 100px;
 }
 
-.card__item-bottom {
+.menu__cards-bottom {
   display: flex;
   justify-content: center;
   margin-top: 100px;
+}
+
+.card {
+  width: 540px;
 }
 
 .card__title {
