@@ -39,6 +39,10 @@
   font-weight: 500;
 }
 
+.nav__link:hover {
+  color: #2f80ed;
+}
+
 .header__title {
   display: flex;
   flex-direction: column;
